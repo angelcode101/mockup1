@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empresa - Puerto Alexa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .form-group input:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-actions .save-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .form-actions .cancel-btn {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .form-actions .cancel-btn:hover {
+            background-color: #5a6268;
+        }
+
+        .form-actions .save-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar una Empresa</h2>
+        <div class="form-group">
+            <label for="nombre_empresa">Nombre de la Empresa</label>
+            <input type="text" id="nombre_empresa" name="nombre_empresa">
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono de Contacto</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="save-btn">Guardar</button>
+            <button type="button" class="cancel-btn">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
